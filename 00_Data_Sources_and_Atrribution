@@ -1,0 +1,125 @@
+# Data Sources, Dataset Documentation & Attribution
+
+## 1. Project Overview
+
+This project analyses FY2026 Hospital Value-Based Purchasing (VBP) Program data published by the Centers for Medicare & Medicaid Services (CMS), United States.
+
+The project integrates five hospital-level datasets to evaluate overall hospital performance, clinical outcomes, patient experience, patient safety, and efficiency.
+
+The consolidated analytical dataset covers **2,455 hospital records**.
+
+This documentation establishes the original data sources, reporting period, dataset coverage, integration approach and attribution for the project.
+
+## 2. Original Data Publisher
+
+| Attribute | Details |
+|---|---|
+| Data Publisher | Centers for Medicare & Medicaid Services (CMS) |
+| Country | United States |
+| Source Platform | CMS Provider Data Catalog |
+| Programme | Hospital Value-Based Purchasing (VBP) |
+| Reporting Fiscal Year | FY2026 |
+| Data Level | Hospital / Facility |
+| Consolidated Records | 2,455 hospitals |
+| Primary Identifier | CMS Facility ID |
+
+**Official Data Catalogue:**
+https://data.cms.gov/provider-data/
+
+## 3. Source Datasets and Official Links
+
+The project uses the following five CMS datasets:
+
+| No. | Project Source File | CMS Dataset | Official Source |
+|---|---|---|---|
+| 1 | hvbp_tps.xlsx | Total Performance Score | [CMS Dataset](https://data.cms.gov/provider-data/dataset/ypbt-wvdk) |
+| 2 | hvbp_clinical_outcomes.xlsx | Clinical Outcomes Domain Scores | [CMS Dataset](https://data.cms.gov/provider-data/dataset/pudb-wetr) |
+| 3 | hvbp_person_community_engagement.xlsx | Person and Community Engagement (HCAHPS) | [CMS Dataset](https://data.cms.gov/provider-data/dataset/avtz-f2ge) |
+| 4 | hvbp_safety.xlsx | Safety | [CMS Dataset](https://data.cms.gov/provider-data/dataset/dgmq-aat3) |
+| 5 | hvbp_efficiency_cost_reduction.xlsx | Efficiency Scores | [CMS Dataset](https://data.cms.gov/provider-data/dataset/su9h-3pvj) |
+
+**Programme Documentation:**
+[CMS Hospital Value-Based Purchasing Program](https://www.cms.gov/medicare/quality/value-based-programs/hospital-purchasing)
+
+## 4. Dataset Coverage and Analytical Scope
+
+The five datasets represent different dimensions of hospital performance.
+
+| Performance Domain | Analytical Focus |
+|---|---|
+| Total Performance Score | Overall hospital performance |
+| Clinical Outcomes | Clinical quality and patient outcomes |
+| Person and Community Engagement | Patient experience and satisfaction |
+| Safety | Patient safety and healthcare-associated complications |
+| Efficiency | Efficiency and Medicare spending measures |
+
+The consolidated dataset provides a common hospital-level structure for comparing performance across these domains.
+
+## 5. Data Integration and Preparation
+
+The source datasets were brought together using the hospital facility identifier and fiscal year.
+
+The preparation process included:
+
+- Inspection of original source datasets.
+- Standardisation of column names and data formats.
+- Validation of hospital identifiers.
+- Handling of missing and unavailable values.
+- Integration of the five datasets.
+- Verification of record counts and score consistency.
+- Preparation of the consolidated analytical dataset.
+
+The original published datasets are distinguished from the cleaned, transformed and analytical outputs created during this project.
+
+## 6. Data Quality and Validation
+
+Data quality checks were performed to improve the reliability of the consolidated dataset.
+
+Key validation activities included:
+
+- Checking duplicate and missing records.
+- Verifying hospital identifiers.
+- Reviewing domain score availability.
+- Comparing weighted domain scores with the Total Performance Score.
+- Checking consistency across the integrated datasets.
+
+These checks supported the subsequent Excel, SQL Server, Power BI, Tableau and statistical analyses.
+
+## 7. Source Attribution and Usage Disclaimer
+
+**Original Data Source:** Centers for Medicare & Medicaid Services (CMS), United States.
+
+The underlying hospital performance data is obtained from the publicly available CMS Provider Data Catalog.
+
+The original data is credited to CMS. The data preparation, transformations, calculations, dashboards, statistical analysis and interpretations presented in this project constitute independent analytical work.
+
+This is an independently developed portfolio project. It is not affiliated with, sponsored by, or endorsed by CMS.
+
+Users should consult the applicable CMS dataset documentation and reuse conditions before further distributing or reusing the source data.
+
+## 8. Project Data Transparency
+
+This repository distinguishes between:
+
+- **Original Source Data:** Data published by CMS.
+- **Prepared Data:** Cleaned and integrated hospital-level records.
+- **Analytical Outputs:** Calculations, comparisons, statistical results and dashboards developed during the project.
+
+This separation supports data traceability, transparency and reproducibility.
+
+---
+
+**Project:** FY2026 Hospital Performance, Quality & Efficiency Analytics
+**Data Publisher:** Centers for Medicare & Medicaid Services (CMS)
+**Reporting Period:** FY2026
+**Hospital Coverage:** 2,455 records
+**Documentation:** Data Sources, Dataset Documentation & Attribution
+
+
+
+
+
+
+
+
+
